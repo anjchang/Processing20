@@ -1,6 +1,9 @@
 # Angela Chang
 # A computationally generated flower, where a 
-# letters on each petal spell out "Processing 2021" and the number "20" is in the center. Written in python source available at
+# letters on each petal spell out "Processing 2021" 
+# and the number "20" is in the center. 
+# Look's like a notebook sketch.
+# Written in python. Source available at
 # Happy 20th Birthday Processing!  Oct. 01, 2021
 # Github: anjchang, Twitter: anjchang
 # anjchang@gmail.com
@@ -14,9 +17,14 @@ def setup():
     strokeWeight(1)
     textMode(CENTER)
 def draw():
-    global cnt,anjstr,font,font2
+    global cnt,anjstr
+    for i in range(0,width,100):
+        for j in range(0,height,100):
+            stroke(25)
+            rect(i,j,width-i,height-i)
     translate(width/2,height/2)
     scale(9)
+    stroke(200)
     pushMatrix()
     fill(255)
     for i in range(0,len(anjstr)):

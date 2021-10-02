@@ -10,7 +10,6 @@
 anjstr="PROCESSING 2021 "
 cnt = 0
 def setup():
-    global font,font2
     size(2250,3000)
     background(255)
     smooth()

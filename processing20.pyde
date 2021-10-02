@@ -42,7 +42,6 @@ def draw():
     fill(255)
     ellipse(0,0,25,25) #center
     stroke(0)
-    fill(255,0,0)
     fill(0)
     text("2",-8,5)
     text("0",0,5) 
